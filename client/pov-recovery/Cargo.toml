@@ -13,11 +13,11 @@ rand = "0.8.5"
 tracing = "0.1.37"
 
 # Substrate
-sc-client-api = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-maybe-compressed-blob = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-runtime = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sc-client-api = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-maybe-compressed-blob = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-runtime = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
 
 # Polkadot
 polkadot-node-primitives = { git = "https://github.com/darwinia-network/polkadot", branch = "ds-release-v0.9.36" }
@@ -37,6 +37,6 @@ portpicker = "0.1.1"
 cumulus-test-service = { path = "../../test/service" }
 
 # Substrate
-sc-cli = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-client-api = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-substrate-test-utils = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sc-cli = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-client-api = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+substrate-test-utils = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }

@@ -9,16 +9,16 @@ parking_lot = "0.12.1"
 futures = "0.3.24"
 
 # Substrate
-sc-client-api = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-service = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-sysinfo = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-telemetry = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-api = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-blockchain = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-core = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-runtime = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sc-client-api = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-service = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-sysinfo = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-telemetry = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-api = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-blockchain = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-core = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-runtime = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
 
 # Polkadot
 polkadot-primitives = { git = "https://github.com/darwinia-network/polkadot", branch = "ds-release-v0.9.36" }

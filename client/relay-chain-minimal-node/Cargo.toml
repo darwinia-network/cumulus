@@ -15,22 +15,22 @@ polkadot-node-network-protocol = { git = "https://github.com/darwinia-network/po
 polkadot-network-bridge = { git = "https://github.com/darwinia-network/polkadot", branch = "ds-release-v0.9.36" }
 
 # substrate deps
-sc-authority-discovery = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-client-api = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-keystore = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-network = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-network-common = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-service = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-transaction-pool-api = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-transaction-pool = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-tracing = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sc-telemetry = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-api = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-blockchain = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-consensus-babe = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
-sp-runtime = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sc-authority-discovery = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-client-api = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-keystore = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-network = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-network-common = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-service = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-transaction-pool-api = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-transaction-pool = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-tracing = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sc-telemetry = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-api = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-blockchain = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-consensus-babe = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
+sp-runtime = { git = "https://github.com/darwinia-network/substrate", branch = "polkadot-v0.9.36" }
 
 # cumulus deps
 cumulus-relay-chain-interface = { path = "../relay-chain-interface" }
