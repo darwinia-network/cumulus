@@ -5,15 +5,15 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-polkadot-overseer = { git = "https://github.com/paritytech/polkadot", branch = "release-v0.9.36" }
-polkadot-service = { git = "https://github.com/paritytech/polkadot", branch = "release-v0.9.36" }
+polkadot-overseer = { git = "https://github.com/darwinia-network/polkadot", branch = "ds-release-v0.9.36" }
+polkadot-service = { git = "https://github.com/darwinia-network/polkadot", branch = "ds-release-v0.9.36" }
 
 cumulus-primitives-core = { path = "../../primitives/core" }
 
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
-sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
-sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
-sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
+sp-api = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sp-blockchain = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sp-state-machine = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sc-client-api = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
 
 tokio = { version = "1.21.2", features = ["sync"] }
 futures = "0.3.25"

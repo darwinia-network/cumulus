@@ -24,17 +24,17 @@ xcm-executor = { git = "https://github.com/paritytech/polkadot", default-feature
 cumulus-primitives-core = { path = "../../primitives/core", default-features = false }
 
 # Optional import for benchmarking
-frame-benchmarking = { default-features = false, optional = true, git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
+frame-benchmarking = { default-features = false, optional = true, git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
 
 [dev-dependencies]
 
 # Substrate
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
-sp-io = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
-pallet-balances = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
+sp-core = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sp-io = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+pallet-balances = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
 
 # Polkadot
-xcm-builder = { git = "https://github.com/paritytech/polkadot", branch = "release-v0.9.36" }
+xcm-builder = { git = "https://github.com/darwinia-network/polkadot", branch = "ds-release-v0.9.36" }
 
 # Cumulus
 cumulus-pallet-parachain-system = { path = "../parachain-system" }

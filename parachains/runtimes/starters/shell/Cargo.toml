@@ -37,7 +37,7 @@ parachain-info = { path = "../../../pallets/parachain-info", default-features = 
 parachains-common = { path = "../../../common", default-features = false }
 
 [build-dependencies]
-substrate-wasm-builder = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
+substrate-wasm-builder = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
 
 [features]
 default = [ "std" ]

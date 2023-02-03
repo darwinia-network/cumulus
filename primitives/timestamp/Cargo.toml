@@ -20,9 +20,9 @@ cumulus-primitives-core = { path = "../core", default-features = false }
 [dev-dependencies]
 
 # Substrate
-sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
-sp-tracing = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
+sp-consensus = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sp-runtime = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
+sp-tracing = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
 
 # Cumulus
 cumulus-test-client = { path = "../../test/client" }

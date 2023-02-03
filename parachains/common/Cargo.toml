@@ -39,7 +39,7 @@ pallet-authorship = { git = "https://github.com/paritytech/substrate", default-f
 sp-io = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.36" }
 
 [build-dependencies]
-substrate-wasm-builder = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.36" }
+substrate-wasm-builder = { git = "https://github.com/darwinia-network/substrate", branch = "ds-polkadot-v0.9.36" }
 
 [features]
 default = ["std"]
