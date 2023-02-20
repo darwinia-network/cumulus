@@ -810,7 +810,7 @@ impl<T: Config> Pallet<T> {
 		// A mismatch means that at least some of the submitted messages were altered, omitted or
 		// added improperly.
 		// assert_eq!(dmq_head.head(), expected_dmq_mqc_head);
-		log::error!("\n======== dmq_head: {:?}, expected_dmq_mqc_head: {:?}\n", dmq_head.head(), expected_dmq_mqc_head);
+		log::debug!("\n======== dmq_head: {:?}, expected_dmq_mqc_head: {:?}\n", dmq_head.head(), expected_dmq_mqc_head);
 
 		ProcessedDownwardMessages::<T>::put(dm_count);
 
@@ -901,7 +901,7 @@ impl<T: Config> Pallet<T> {
 			let target_head = channel.mqc_head.unwrap_or_default();
 
 			// assert!(cur_head == target_head);
-			log::warn!("\n======== cur_head: {:?}, target_head: {:?}\n", cur_head, target_head);
+			log::debug!("\n======== cur_head: {:?}, target_head: {:?}\n", cur_head, target_head);
 		}
 
 		<LastHrmpMqcHeads<T>>::put(running_mqc_heads);
