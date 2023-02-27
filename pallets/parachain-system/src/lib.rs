@@ -810,7 +810,7 @@ impl<T: Config> Pallet<T> {
 		// A mismatch means that at least some of the submitted messages were altered, omitted or
 		// added improperly.
 		// assert_eq!(dmq_head.head(), expected_dmq_mqc_head);
-		log::debug!("\n======== dmq_head: {:?}, expected_dmq_mqc_head: {:?}\n", dmq_head.head(), expected_dmq_mqc_head);
+		log::debug!("\n======== dmq_head: {:?}, expected_dmq_mqc_head: {:?}, check: {}\n", dmq_head.head(), expected_dmq_mqc_head, dmq_head.head() == expected_dmq_mqc_head);
 
 		ProcessedDownwardMessages::<T>::put(dm_count);
 
@@ -893,6 +893,7 @@ impl<T: Config> Pallet<T> {
 		// `running_mqc_heads`. Otherwise, in a block where no messages were sent in a channel
 		// it won't get into next block's `last_mqc_heads` and thus will be all zeros, which
 		// would corrupt the message queue chain.
+		let mut expected_map: BTreeMap<ParaId, sp_core::H256> = BTreeMap::new();
 		for &(ref sender, ref channel) in ingress_channels {
 			let cur_head = running_mqc_heads
 				.entry(sender)
@@ -901,8 +902,10 @@ impl<T: Config> Pallet<T> {
 			let target_head = channel.mqc_head.unwrap_or_default();
 
 			// assert!(cur_head == target_head);
-			log::debug!("\n======== cur_head: {:?}, target_head: {:?}\n", cur_head, target_head);
+			expected_map.insert(sender.clone(), target_head);
+			log::debug!("\n======== cur_head: {:?}, expected_head: {:?}, check: {:?}\n", cur_head, target_head, cur_head==target_head);
 		}
+		log::debug!("\n############# encode last_hrmp_heads: {}\n", "0x".to_owned() + hex::encode(expected_map.encode()).as_str());
 
 		<LastHrmpMqcHeads<T>>::put(running_mqc_heads);
 
